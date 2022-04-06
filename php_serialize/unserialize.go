@@ -4,11 +4,13 @@ import (
 	"bytes"
 	"fmt"
 	"log"
+	"math"
 	"strconv"
 	"strings"
 )
 
-const UNSERIALIZABLE_OBJECT_MAX_LEN = 10 * 1024 * 1024 * 1024
+//const UNSERIALIZABLE_OBJECT_MAX_LEN = 10 * 1024 * 1024 * 1024
+const UNSERIALIZABLE_OBJECT_MAX_LEN = math.MaxInt
 
 func UnSerialize(s string) (PhpValue, error) {
 	decoder := NewUnSerializer(s)

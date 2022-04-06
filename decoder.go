@@ -5,7 +5,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/yvasiyarov/php_session_decoder/php_serialize"
+	"github.com/jasacloud/php_session_decoder/php_serialize"
 )
 
 type PhpDecoder struct {

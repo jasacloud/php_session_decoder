@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/yvasiyarov/php_session_decoder/php_serialize"
+	"github.com/jasacloud/php_session_decoder/php_serialize"
 )
 
 func TestEncodeBooleanValue(t *testing.T) {
